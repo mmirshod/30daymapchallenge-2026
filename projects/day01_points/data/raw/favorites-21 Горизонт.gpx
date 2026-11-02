@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<gpx version="1.1" creator="OsmAndRouterV2" xmlns="http://www.topografix.com/GPX/1/1" xmlns:osmand="https://osmand.net/docs/technical/osmand-file-formats/osmand-gpx" xmlns:gpxtpx="https://www8.garmin.com/xmlschemas/TrackPointExtensionv1.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 https://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <name>21 Горизонт</name>
+    <time>2026-10-28T10:47:24Z</time>
+  </metadata>
+  <wpt lat="41.49519" lon="70.05867">
+    <name>Большой Чимган</name>
+    <type>21 Горизонт</type>
+    <extensions>
+      <osmand:address>No data</osmand:address>
+      <osmand:osm_tag_wikimedia_commons>Category:Greater Chimgan</osmand:osm_tag_wikimedia_commons>
+      <osmand:icon>natural_peak</osmand:icon>
+      <osmand:osm_tag_ele>3309</osmand:osm_tag_ele>
+      <osmand:osm_tag_wikidata>Q18755528</osmand:osm_tag_wikidata>
+      <osmand:osm_tag_wikipedia_-_ru>ru:Большой Чимган</osmand:osm_tag_wikipedia_-_ru>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+      <osmand:osm_tag_summit_cross>yes</osmand:osm_tag_summit_cross>
+      <osmand:osm_tag_wikipedia_-_en>en:Greater Chimgan</osmand:osm_tag_wikipedia_-_en>
+      <osmand:amenity_subtype>peak;viewpoint;wiki_place</osmand:amenity_subtype>
+      <osmand:amenity_name>Большой Чимган</osmand:amenity_name>
+      <osmand:osm_tag_viewpoint>viewpoint</osmand:osm_tag_viewpoint>
+      <osmand:osm_tag_wikipedia>http://uz.wikipedia.org/wiki/Katta Chimyon togʻi</osmand:osm_tag_wikipedia>
+      <osmand:osm_tag_peak>peak</osmand:osm_tag_peak>
+    </extensions>
+  </wpt>
+  <wpt lat="41.247787" lon="70.33914">
+    <name>Каракуш</name>
+    <type>21 Горизонт</type>
+    <extensions>
+      <osmand:amenity_subtype>peak;survey_point</osmand:amenity_subtype>
+      <osmand:address> 10V111o</osmand:address>
+      <osmand:amenity_name>Каракуш</osmand:amenity_name>
+      <osmand:icon>natural_peak</osmand:icon>
+      <osmand:osm_tag_ele>3864</osmand:osm_tag_ele>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+      <osmand:osm_tag_peak>peak</osmand:osm_tag_peak>
+      <osmand:osm_tag_survey_point>survey_point</osmand:osm_tag_survey_point>
+    </extensions>
+  </wpt>
+  <wpt lat="41.263355" lon="69.97375">
+    <name>Qizilnura</name>
+    <type>21 Горизонт</type>
+    <extensions>
+      <osmand:amenity_subtype>survey_point</osmand:amenity_subtype>
+      <osmand:address>No data</osmand:address>
+      <osmand:osm_tag_alt_name>Кызыл-Нура</osmand:osm_tag_alt_name>
+      <osmand:amenity_name>Qizilnura</osmand:amenity_name>
+      <osmand:icon>man_made_survey_point</osmand:icon>
+      <osmand:osm_tag_ele>3268</osmand:osm_tag_ele>
+      <osmand:osm_tag_attraction>attraction</osmand:osm_tag_attraction>
+      <osmand:amenity_type>man_made</osmand:amenity_type>
+      <osmand:osm_tag_peak>peak</osmand:osm_tag_peak>
+    </extensions>
+  </wpt>
+  <wpt lat="41.510303" lon="70.117134">
+    <name>Оукашка (Охотничий)</name>
+    <type>21 Горизонт</type>
+    <extensions>
+      <osmand:amenity_subtype>peak;survey_point</osmand:amenity_subtype>
+      <osmand:osm_tag_official_name>Аукашка</osmand:osm_tag_official_name>
+      <osmand:address>No data</osmand:address>
+      <osmand:osm_tag_alt_name>Пик Охотничий</osmand:osm_tag_alt_name>
+      <osmand:amenity_name>Аукашка (Охотничий)</osmand:amenity_name>
+      <osmand:icon>natural_peak</osmand:icon>
+      <osmand:osm_tag_ele>3099</osmand:osm_tag_ele>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+      <osmand:osm_tag_alt_name_-_ru>Пик Охотничий</osmand:osm_tag_alt_name_-_ru>
+      <osmand:osm_tag_peak>peak</osmand:osm_tag_peak>
+      <osmand:osm_tag_survey_point>survey_point</osmand:osm_tag_survey_point>
+    </extensions>
+  </wpt>
+  <wpt lat="41.702927" lon="70.247826">
+    <name>Чадак</name>
+    <type>21 Горизонт</type>
+    <extensions>
+      <osmand:amenity_subtype>peak</osmand:amenity_subtype>
+      <osmand:address>No data</osmand:address>
+      <osmand:amenity_name>Чадак</osmand:amenity_name>
+      <osmand:icon>natural_peak</osmand:icon>
+      <osmand:osm_tag_ele>3539</osmand:osm_tag_ele>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+    </extensions>
+  </wpt>
+  <wpt lat="41.791553" lon="70.40907">
+    <name>Тавалган</name>
+    <type>21 Горизонт</type>
+    <extensions>
+      <osmand:amenity_subtype>survey_point</osmand:amenity_subtype>
+      <osmand:address>No data</osmand:address>
+      <osmand:amenity_name>Тавалган</osmand:amenity_name>
+      <osmand:icon>man_made_survey_point</osmand:icon>
+      <osmand:osm_tag_ele>3889</osmand:osm_tag_ele>
+      <osmand:amenity_type>man_made</osmand:amenity_type>
+      <osmand:osm_tag_peak>peak</osmand:osm_tag_peak>
+    </extensions>
+  </wpt>
+  <wpt lat="41.734882" lon="70.25928">
+    <name>Сурхат</name>
+    <type>21 Горизонт</type>
+    <extensions>
+      <osmand:amenity_subtype>peak</osmand:amenity_subtype>
+      <osmand:address>No data</osmand:address>
+      <osmand:amenity_name>Сурхат</osmand:amenity_name>
+      <osmand:icon>natural_peak</osmand:icon>
+      <osmand:osm_tag_ele>3378</osmand:osm_tag_ele>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+    </extensions>
+  </wpt>
+  <wpt lat="41.73068" lon="70.332855">
+    <name>Пиёзак</name>
+    <type>21 Горизонт</type>
+    <extensions>
+      <osmand:amenity_subtype>peak</osmand:amenity_subtype>
+      <osmand:address>No data</osmand:address>
+      <osmand:osm_tag_alt_name>2000 лет Ташкента</osmand:osm_tag_alt_name>
+      <osmand:amenity_name>Пиёзак</osmand:amenity_name>
+      <osmand:icon>natural_peak</osmand:icon>
+      <osmand:osm_tag_ele>3737</osmand:osm_tag_ele>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+      <osmand:osm_tag_alt_name_-_ru>2000 лет Ташкента</osmand:osm_tag_alt_name_-_ru>
+    </extensions>
+  </wpt>
+  <wpt lat="41.258263" lon="70.09147">
+    <name>Реваш</name>
+    <type>21 Горизонт</type>
+    <extensions>
+      <osmand:amenity_subtype>peak</osmand:amenity_subtype>
+      <osmand:address>No data</osmand:address>
+      <osmand:amenity_name>Реваш</osmand:amenity_name>
+      <osmand:icon>natural_peak</osmand:icon>
+      <osmand:osm_tag_ele>3227</osmand:osm_tag_ele>
+      <osmand:osm_tag_attraction>attraction</osmand:osm_tag_attraction>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+    </extensions>
+  </wpt>
+  <wpt lat="41.154964" lon="70.22327">
+    <name>Бабайтаг</name>
+    <type>21 Горизонт</type>
+    <extensions>
+      <osmand:amenity_subtype>peak</osmand:amenity_subtype>
+      <osmand:address>No data</osmand:address>
+      <osmand:amenity_name>Бабайтаг</osmand:amenity_name>
+      <osmand:icon>natural_peak</osmand:icon>
+      <osmand:osm_tag_ele>3556</osmand:osm_tag_ele>
+      <osmand:osm_tag_wikidata>Q13667720</osmand:osm_tag_wikidata>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+      <osmand:osm_tag_wikipedia>http://ru.wikipedia.org/wiki/Бабайтаг</osmand:osm_tag_wikipedia>
+      <osmand:osm_tag_survey_point>survey_point</osmand:osm_tag_survey_point>
+    </extensions>
+  </wpt>
+  <wpt lat="41.722633" lon="70.3174">
+    <name>Замок</name>
+    <type>21 Горизонт</type>
+    <extensions>
+      <osmand:amenity_subtype>peak</osmand:amenity_subtype>
+      <osmand:address>No data</osmand:address>
+      <osmand:amenity_name>Замок</osmand:amenity_name>
+      <osmand:icon>natural_peak</osmand:icon>
+      <osmand:osm_tag_ele>3644</osmand:osm_tag_ele>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+    </extensions>
+  </wpt>
+  <wpt lat="41.71837" lon="70.295334">
+    <name>Деволи Сурх</name>
+    <type>21 Горизонт</type>
+    <extensions>
+      <osmand:amenity_subtype>peak</osmand:amenity_subtype>
+      <osmand:address>No data</osmand:address>
+      <osmand:amenity_name>Деволи Сурх</osmand:amenity_name>
+      <osmand:icon>natural_peak</osmand:icon>
+      <osmand:osm_tag_ele>3550</osmand:osm_tag_ele>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+    </extensions>
+  </wpt>
+  <wpt lat="41.81196" lon="70.4393">
+    <name>пик Амира Тимура западная</name>
+    <type>21 Горизонт</type>
+    <extensions>
+      <osmand:amenity_subtype>peak</osmand:amenity_subtype>
+      <osmand:address>No data</osmand:address>
+      <osmand:amenity_name>пик Амира Тимура западная</osmand:amenity_name>
+      <osmand:icon>natural_peak</osmand:icon>
+      <osmand:osm_tag_ele>3766</osmand:osm_tag_ele>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+      <osmand:osm_tag_alt_name_-_ru>пик Амира Темура</osmand:osm_tag_alt_name_-_ru>
+    </extensions>
+  </wpt>
+  <wpt lat="42.07277" lon="70.4667">
+    <name>Кызылбаш</name>
+    <type>21 Горизонт</type>
+    <extensions>
+      <osmand:amenity_subtype>peak</osmand:amenity_subtype>
+      <osmand:address>No data</osmand:address>
+      <osmand:amenity_name>Кызылбаш</osmand:amenity_name>
+      <osmand:icon>natural_peak</osmand:icon>
+      <osmand:osm_tag_ele>3824</osmand:osm_tag_ele>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+    </extensions>
+  </wpt>
+  <wpt lat="38.69224" lon="67.33146">
+    <name>Chimboy</name>
+    <type>21 Горизонт</type>
+    <extensions>
+      <osmand:amenity_subtype>peak</osmand:amenity_subtype>
+      <osmand:address>No data</osmand:address>
+      <osmand:amenity_name>Chimboy</osmand:amenity_name>
+      <osmand:icon>natural_peak</osmand:icon>
+      <osmand:osm_tag_ele>3798,3</osmand:osm_tag_ele>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+    </extensions>
+  </wpt>
+  <wpt lat="38.38384" lon="67.27887">
+    <name>Ходжа Гур-Гур Ота</name>
+    <type>21 Горизонт</type>
+    <extensions>
+      <osmand:amenity_subtype>peak</osmand:amenity_subtype>
+      <osmand:address>No data</osmand:address>
+      <osmand:amenity_name>Ходжа Гур-Гур Ота</osmand:amenity_name>
+      <osmand:icon>natural_peak</osmand:icon>
+      <osmand:osm_tag_ele>3720</osmand:osm_tag_ele>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+    </extensions>
+  </wpt>
+  <wpt lat="38.673965" lon="67.96832">
+    <name>Мачетли</name>
+    <type>21 Горизонт</type>
+    <extensions>
+      <osmand:amenity_subtype>peak</osmand:amenity_subtype>
+      <osmand:address>No data</osmand:address>
+      <osmand:amenity_name>Мачетли</osmand:amenity_name>
+      <osmand:icon>natural_peak</osmand:icon>
+      <osmand:osm_tag_ele>3478</osmand:osm_tag_ele>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+    </extensions>
+  </wpt>
+  <wpt lat="38.442787" lon="67.35258">
+    <name>Ходжа Буз Борак</name>
+    <type>21 Горизонт</type>
+    <extensions>
+      <osmand:amenity_subtype>peak</osmand:amenity_subtype>
+      <osmand:address>No data</osmand:address>
+      <osmand:amenity_name>Ходжа Буз Борак</osmand:amenity_name>
+      <osmand:icon>natural_peak</osmand:icon>
+      <osmand:osm_tag_ele>3920</osmand:osm_tag_ele>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+    </extensions>
+  </wpt>
+  <wpt lat="38.384537" lon="67.55776">
+    <name>Чульбаир 3812м</name>
+    <type>21 Горизонт</type>
+    <extensions>
+      <osmand:amenity_subtype>peak</osmand:amenity_subtype>
+      <osmand:address>No data</osmand:address>
+      <osmand:amenity_name>Чульбаир 3812м</osmand:amenity_name>
+      <osmand:icon>natural_peak</osmand:icon>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+    </extensions>
+  </wpt>
+  <wpt lat="41.36481" lon="70.47401">
+    <name>Арашан</name>
+    <type>21 Горизонт</type>
+    <extensions>
+      <osmand:amenity_subtype>peak</osmand:amenity_subtype>
+      <osmand:address>No data</osmand:address>
+      <osmand:amenity_name>Арашан</osmand:amenity_name>
+      <osmand:icon>natural_peak</osmand:icon>
+      <osmand:osm_tag_ele>3752</osmand:osm_tag_ele>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+    </extensions>
+  </wpt>
+  <extensions>
+    <osmand:points_groups>
+      <group name="21 Горизонт" color="#EECC22" icon="special_star" background="circle" />
+    </osmand:points_groups>
+  </extensions>
+</gpx>

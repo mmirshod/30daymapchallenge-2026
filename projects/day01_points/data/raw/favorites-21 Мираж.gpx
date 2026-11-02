@@ -1,0 +1,291 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<gpx version="1.1" creator="OsmAndRouterV2" xmlns="http://www.topografix.com/GPX/1/1" xmlns:osmand="https://osmand.net/docs/technical/osmand-file-formats/osmand-gpx" xmlns:gpxtpx="https://www8.garmin.com/xmlschemas/TrackPointExtensionv1.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 https://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <name>21 Мираж</name>
+    <time>2026-11-01T13:26:39Z</time>
+  </metadata>
+  <wpt lat="40.61566" lon="67.487335">
+    <name>Tuzkon ko'li</name>
+    <type>21 Мираж</type>
+    <extensions>
+      <osmand:amenity_subtype>water</osmand:amenity_subtype>
+      <osmand:address>No data</osmand:address>
+      <osmand:color>#00aeff</osmand:color>
+      <osmand:osm_tag_route_id>R7708045</osmand:osm_tag_route_id>
+      <osmand:amenity_name>Tuzkon ko'li</osmand:amenity_name>
+      <osmand:icon>water</osmand:icon>
+      <osmand:osm_tag_wikidata>Q13224993</osmand:osm_tag_wikidata>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+    </extensions>
+  </wpt>
+  <wpt lat="41.897938" lon="70.5539">
+    <time>2026-11-01T13:33:49Z</time>
+    <name>Ихначкуль (Нижний)</name>
+    <type>21 Мираж</type>
+    <extensions>
+      <osmand:amenity_subtype>water</osmand:amenity_subtype>
+      <osmand:address>No data</osmand:address>
+      <osmand:color>#00aeff</osmand:color>
+      <osmand:osm_tag_route_id>R3355364</osmand:osm_tag_route_id>
+      <osmand:amenity_name>Ихначкуль</osmand:amenity_name>
+      <osmand:icon>water</osmand:icon>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+    </extensions>
+  </wpt>
+  <wpt lat="41.901627" lon="70.56167">
+    <time>2026-11-01T13:34:08Z</time>
+    <name>Ихначкуль (Средний)</name>
+    <type>21 Мираж</type>
+    <extensions>
+      <osmand:amenity_subtype>water</osmand:amenity_subtype>
+      <osmand:address>No data</osmand:address>
+      <osmand:color>#00aeff</osmand:color>
+      <osmand:osm_tag_route_id>R3355364</osmand:osm_tag_route_id>
+      <osmand:amenity_name>Ихначкуль</osmand:amenity_name>
+      <osmand:icon>water</osmand:icon>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+    </extensions>
+  </wpt>
+  <wpt lat="41.87994" lon="70.556984">
+    <name>Ихначкуль (Верхний)</name>
+    <type>21 Мираж</type>
+    <extensions>
+      <osmand:amenity_subtype>water</osmand:amenity_subtype>
+      <osmand:collapsable_water_type>water_lake</osmand:collapsable_water_type>
+      <osmand:address>No data</osmand:address>
+      <osmand:color>#00aeff</osmand:color>
+      <osmand:amenity_name>Верхний Ихначкуль</osmand:amenity_name>
+      <osmand:icon>water</osmand:icon>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+      <osmand:osm_tag_salt_no>no</osmand:osm_tag_salt_no>
+    </extensions>
+  </wpt>
+  <wpt lat="41.1272499" lon="70.7828356">
+    <name>Алтынкуль</name>
+    <type>21 Мираж</type>
+    <extensions>
+      <osmand:color>#00aeff</osmand:color>
+      <osmand:icon>water</osmand:icon>
+    </extensions>
+  </wpt>
+  <wpt lat="38.08219" lon="66.72445">
+    <name>Канбешбулак</name>
+    <type>21 Мираж</type>
+    <extensions>
+      <osmand:amenity_subtype>water</osmand:amenity_subtype>
+      <osmand:address>No data</osmand:address>
+      <osmand:color>#00aeff</osmand:color>
+      <osmand:amenity_name>Қонбешбулоқ</osmand:amenity_name>
+      <osmand:icon>water</osmand:icon>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+    </extensions>
+  </wpt>
+  <wpt lat="39.34168" lon="67.13512">
+    <name>Каттакуль</name>
+    <type>21 Мираж</type>
+    <extensions>
+      <osmand:amenity_subtype>water</osmand:amenity_subtype>
+      <osmand:collapsable_water_type>water_lake</osmand:collapsable_water_type>
+      <osmand:osm_tag_intermittent>yes</osmand:osm_tag_intermittent>
+      <osmand:address>No data</osmand:address>
+      <osmand:color>#00aeff</osmand:color>
+      <osmand:amenity_name>Kattako'l</osmand:amenity_name>
+      <osmand:icon>water</osmand:icon>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+    </extensions>
+  </wpt>
+  <wpt lat="41.3669353" lon="70.4915988">
+    <name>Арашанские Озера</name>
+    <type>21 Мираж</type>
+    <extensions>
+      <osmand:color>#00aeff</osmand:color>
+      <osmand:icon>water</osmand:icon>
+    </extensions>
+  </wpt>
+  <wpt lat="41.775085" lon="70.468155">
+    <name>Верхнее Сарыкамское озеро</name>
+    <type>21 Мираж</type>
+    <extensions>
+      <osmand:amenity_subtype>water</osmand:amenity_subtype>
+      <osmand:collapsable_water_type>water_lake</osmand:collapsable_water_type>
+      <osmand:address>No data</osmand:address>
+      <osmand:color>#00aeff</osmand:color>
+      <osmand:amenity_name>Верхнее Сарыкамское озеро</osmand:amenity_name>
+      <osmand:icon>water</osmand:icon>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+    </extensions>
+  </wpt>
+  <wpt lat="41.36434" lon="69.71621">
+    <name>Ачикуль</name>
+    <type>21 Мираж</type>
+    <extensions>
+      <osmand:amenity_subtype>water</osmand:amenity_subtype>
+      <osmand:address>No data</osmand:address>
+      <osmand:color>#00aeff</osmand:color>
+      <osmand:amenity_name>Achikul</osmand:amenity_name>
+      <osmand:icon>water</osmand:icon>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+      <osmand:osm_tag_salt_yes>yes</osmand:osm_tag_salt_yes>
+      <osmand:osm_tag_note>соленное</osmand:osm_tag_note>
+    </extensions>
+  </wpt>
+  <wpt lat="41.856407" lon="70.42906">
+    <name>Озеро Бадак</name>
+    <type>21 Мираж</type>
+    <extensions>
+      <osmand:amenity_subtype>water</osmand:amenity_subtype>
+      <osmand:address> 4x4, Takayong'oq</osmand:address>
+      <osmand:color>#00aeff</osmand:color>
+      <osmand:amenity_name>Badakko'l</osmand:amenity_name>
+      <osmand:icon>water</osmand:icon>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+    </extensions>
+  </wpt>
+  <wpt lat="41.8655198" lon="70.5119552">
+    <name>Озеро Ложный-Василек</name>
+    <type>21 Мираж</type>
+    <extensions>
+      <osmand:address> 4x4, Piskom</osmand:address>
+      <osmand:color>#00aeff</osmand:color>
+      <osmand:icon>water</osmand:icon>
+    </extensions>
+  </wpt>
+  <wpt lat="42.2533995" lon="71.1335464">
+    <name>Шовуркуль</name>
+    <type>21 Мираж</type>
+    <extensions>
+      <osmand:address> М-045</osmand:address>
+      <osmand:color>#00aeff</osmand:color>
+      <osmand:icon>water</osmand:icon>
+    </extensions>
+  </wpt>
+  <wpt lat="42.106285" lon="70.87628">
+    <name>озеро Караканыш</name>
+    <type>21 Мираж</type>
+    <extensions>
+      <osmand:amenity_subtype>water</osmand:amenity_subtype>
+      <osmand:collapsable_water_type>water_lake</osmand:collapsable_water_type>
+      <osmand:address>No data</osmand:address>
+      <osmand:color>#00aeff</osmand:color>
+      <osmand:amenity_name>озеро Караканыш</osmand:amenity_name>
+      <osmand:icon>water</osmand:icon>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+    </extensions>
+  </wpt>
+  <wpt lat="42.2265978" lon="71.1499903">
+    <time>2026-11-01T14:43:49Z</time>
+    <name>озеро Медвежье</name>
+    <type>21 Мираж</type>
+    <extensions>
+      <osmand:address> М-045</osmand:address>
+      <osmand:color>#00aeff</osmand:color>
+      <osmand:icon>water</osmand:icon>
+    </extensions>
+  </wpt>
+  <wpt lat="42.1053" lon="70.837555">
+    <name>Терметаш</name>
+    <type>21 Мираж</type>
+    <extensions>
+      <osmand:amenity_subtype>water</osmand:amenity_subtype>
+      <osmand:collapsable_water_type>water_lake</osmand:collapsable_water_type>
+      <osmand:address>No data</osmand:address>
+      <osmand:color>#00aeff</osmand:color>
+      <osmand:amenity_name>Termetosh</osmand:amenity_name>
+      <osmand:icon>water</osmand:icon>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+    </extensions>
+  </wpt>
+  <wpt lat="41.436462" lon="70.5766">
+    <name>Зекиркуль</name>
+    <type>21 Мираж</type>
+    <extensions>
+      <osmand:amenity_subtype>water</osmand:amenity_subtype>
+      <osmand:collapsable_water_type>water_lake</osmand:collapsable_water_type>
+      <osmand:address>No data</osmand:address>
+      <osmand:color>#00aeff</osmand:color>
+      <osmand:amenity_name>Зекиркуль</osmand:amenity_name>
+      <osmand:icon>water</osmand:icon>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+      <osmand:osm_tag_salt_no>no</osmand:osm_tag_salt_no>
+    </extensions>
+  </wpt>
+  <wpt lat="40.550777" lon="66.58914">
+    <name>озеро Фазильман</name>
+    <type>21 Мираж</type>
+    <extensions>
+      <osmand:amenity_subtype>water</osmand:amenity_subtype>
+      <osmand:collapsable_water_type>water_lake</osmand:collapsable_water_type>
+      <osmand:address>No data</osmand:address>
+      <osmand:color>#00aeff</osmand:color>
+      <osmand:osm_tag_alt_name>Sentobko'l</osmand:osm_tag_alt_name>
+      <osmand:amenity_name>Fozilmon ko'li</osmand:amenity_name>
+      <osmand:icon>water</osmand:icon>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+    </extensions>
+  </wpt>
+  <wpt lat="41.688538" lon="70.3495">
+    <name>озеро Кичкинкуль</name>
+    <type>21 Мираж</type>
+    <extensions>
+      <osmand:amenity_subtype>water</osmand:amenity_subtype>
+      <osmand:collapsable_water_type>water_lake</osmand:collapsable_water_type>
+      <osmand:address>No data</osmand:address>
+      <osmand:color>#00aeff</osmand:color>
+      <osmand:osm_tag_alt_name>Голубое;Кичкинкуль</osmand:osm_tag_alt_name>
+      <osmand:amenity_name>Кичкинкуль (Голубое)</osmand:amenity_name>
+      <osmand:icon>water</osmand:icon>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+    </extensions>
+  </wpt>
+  <wpt lat="41.9190932" lon="70.321907">
+    <name>Нижний Урунгач</name>
+    <type>21 Мираж</type>
+    <extensions>
+      <osmand:color>#00aeff</osmand:color>
+      <osmand:icon>water</osmand:icon>
+    </extensions>
+  </wpt>
+  <wpt lat="41.9228605" lon="70.3092889">
+    <name>Верхний Урунгач</name>
+    <type>21 Мираж</type>
+    <extensions>
+      <osmand:color>#00aeff</osmand:color>
+      <osmand:icon>water</osmand:icon>
+    </extensions>
+  </wpt>
+  <wpt lat="41.2988915" lon="70.3884385">
+    <name>озера Тойпана</name>
+    <type>21 Мираж</type>
+    <extensions>
+      <osmand:color>#00aeff</osmand:color>
+      <osmand:icon>water</osmand:icon>
+    </extensions>
+  </wpt>
+  <wpt lat="41.2990201" lon="70.4003094">
+    <name>озеро в верховьях Келимчика</name>
+    <desc>&lt;p&gt;не подтверждено что верная локация&lt;/p&gt;</desc>
+    <type>21 Мираж</type>
+    <extensions>
+      <osmand:color>#00aeff</osmand:color>
+      <osmand:icon>water</osmand:icon>
+    </extensions>
+  </wpt>
+  <wpt lat="42.22063" lon="71.233284">
+    <name>озера Ледника Озерный</name>
+    <type>21 Мираж</type>
+    <extensions>
+      <osmand:amenity_subtype>water</osmand:amenity_subtype>
+      <osmand:collapsable_water_type>water_lake</osmand:collapsable_water_type>
+      <osmand:address> М-045</osmand:address>
+      <osmand:color>#00aeff</osmand:color>
+      <osmand:amenity_name>Нижнее озеро (ледник озерный)</osmand:amenity_name>
+      <osmand:icon>water</osmand:icon>
+      <osmand:amenity_type>natural</osmand:amenity_type>
+    </extensions>
+  </wpt>
+  <extensions>
+    <osmand:points_groups>
+      <group name="21 Мираж" color="#EECC22" icon="special_star" background="circle" />
+    </osmand:points_groups>
+  </extensions>
+</gpx>

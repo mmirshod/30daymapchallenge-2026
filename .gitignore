@@ -1,0 +1,28 @@
+# Operating system and editor files
+.DS_Store
+._*
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+
+# Temporary files and QGIS backups / database journals
+*.tmp
+*.temp
+*.swp
+*~
+*.qgs~
+*.qgz~
+*.qgs.bak
+*.qgz.bak
+*.qgd
+*.gpkg-wal
+*.gpkg-shm
+
+# Reproducible project outputs; retain raw inputs, QGIS projects, and icons.
+/projects/*/data/processed/
+/projects/*/data/intermediate/
+/projects/*/terrain/
+/projects/*/exports/
+
+# Published assets under docs/ (including terrain tiles) must remain tracked.
