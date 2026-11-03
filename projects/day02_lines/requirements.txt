@@ -1,0 +1,12 @@
+geopandas
+pyogrio
+shapely
+rasterio
+numpy
+matplotlib
+networkx
+pandas
+jupyterlab
+pyrosm
+pandas-stubs
+osmnx
