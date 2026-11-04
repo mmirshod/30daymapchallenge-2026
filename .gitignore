@@ -20,20 +20,15 @@ __pycache__/
 *.gpkg-shm
 
 # Reproducible project outputs; retain raw inputs, QGIS projects, and icons.
-/projects/*/data/processed/
 /projects/*/data/intermediate/
 /projects/*/terrain/
 /projects/*/exports/
 
-# Published assets under docs/ (including terrain tiles) must remain tracked.
 /projects/day02_lines/data/raw/
-
+/projects/day02_lines/data/processed/
 
 # Large GIS datasets
 *.osm.pbf
-*.tif
-*.tiff
-*.gpkg
 
 # Jupyter checkpoints
 .ipynb_checkpoints/

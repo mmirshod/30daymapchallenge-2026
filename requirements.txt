@@ -10,3 +10,5 @@ jupyterlab
 pyrosm
 pandas-stubs
 osmnx
+folium
+scikit-learn
