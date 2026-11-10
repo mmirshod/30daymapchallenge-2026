@@ -1,0 +1,25 @@
+version: exploratory_g5_v1
+normalization: empirical_mid_percentile_zero_anchored
+terrain:
+  area_percentile: 0.70
+  open_directions_fraction: 0.30
+peaks:
+  visible_count_percentile: 0.70
+  bearing_coverage_fraction: 0.30
+skyline:
+  summed_angular_prominence_percentile: 0.60
+  smoothed_complexity_percentile: 0.40
+  smoothing_degrees: [0.5, 1.0, 2.0]
+  prominence_window_half_degrees: 5.0
+  minimum_angular_prominence_degrees: 0.1
+distance:
+  band_weighted_terrain_distance_percentile: 0.60
+  mean_positive_peak_angular_relief_percentile: 0.40
+  terrain_band_midpoints_km: [10, 35, 75]
+elevation_bands_m: [1800, 2000, 2500, 3000, 3500, 4000, 4500]
+sensitivity:
+  random_weight_draws: 500
+  dirichlet_concentration: 50
+  seed: 20261110
+  nearfield_ablation_m: 500
+mps_policy: unavailable_until_nonlake_registry_validated

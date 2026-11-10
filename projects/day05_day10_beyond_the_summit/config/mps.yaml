@@ -1,0 +1,12 @@
+version: exploratory_horizon_v1
+denominator: 15
+landmark_weights:
+  count: 0.70
+  distance: 0.15
+  angular_relief: 0.15
+distance_scale_m: 100000
+angular_relief_scale_degrees: 1
+natural_weight: 0.80
+landmark_weight: 0.20
+# Fixed before calculating MPS. One eligible program: no constant program bonus.
+# Angular relief is a proxy, not independently measured skyline prominence.

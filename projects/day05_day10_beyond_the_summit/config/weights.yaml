@@ -1,0 +1,10 @@
+status: frozen_exploratory_g5_v1
+nps:
+  terrain: 0.30
+  peaks: 0.25
+  skyline: 0.30
+  distance: 0.15
+mps:
+  natural: 0.80
+  landmarks: 0.20
+
