@@ -1,0 +1,8 @@
+site_url: https://mmirshod.github.io/30daymapchallenge-2026/day05/
+deployment_status: publication_authorized_2026_11_10
+pages_directory: docs/day05
+profile_display_step_degrees: 1
+leaflet_version: 1.9.4
+reports:
+  page_format: A3_landscape
+  png_dpi: 144
