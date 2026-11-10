@@ -1,0 +1,53 @@
+{
+  "kind": "30DayMapChallenge gallery",
+  "days": [
+    "day01",
+    "day02",
+    "day03",
+    "day04",
+    "day05",
+    "day10"
+  ],
+  "sources": {
+    "docs/day01/Day 01 - Report.png": "1c343cf382654ce7aa082cf1f0b8af654ee59ac377775ee1b547693b0dc65e5e",
+    "docs/day02/Day 02 - Report_1.png": "5c190776c320cbc537d18256adfb76a4429607cdd32291e525f2100e255a4190",
+    "docs/day02/Day 02 - Report_2.png": "5a9049902e7ca8d3035ac8c4080571b6cc760b43f7d0902f43728d41d51591de",
+    "docs/day03/Day 03 - Report.png": "26bd776be1ec47a2a0e54b61dae2608f9128838f129e131801224597e56dcd0b",
+    "docs/day04/Day 04 - Report.png": "6e4bebd5639e91cab81e0ae7bbd67436f0b6288f4dc137b579e0d34243923d60",
+    "projects/day05_day10_beyond_the_summit/report/g6/day05_beyond_the_summit_page_01.png": "cfd3ed48c4e06f264320d29874ce9c5c2183dffaf461cb70c2c5ef01b31ef262",
+    "projects/day05_day10_beyond_the_summit/report/g6/day05_beyond_the_summit_page_02.png": "2e88c375d51e6dc728241fb5288cf1e825a8886c34849da33c3cdb6a396fd6d0",
+    "projects/day05_day10_beyond_the_summit/report/g6/day05_beyond_the_summit_page_03.png": "201f409287acf1b19cadf36638a3511ba5f2a34df5439109ab56f6183c5da63f",
+    "projects/day05_day10_beyond_the_summit/report/g6/day10_beyond_the_prompt_page_01.png": "6310d382019985b09646994a2dda1aec7dec1ef9cec0c8dab640191f20ee9a1a",
+    "projects/day05_day10_beyond_the_summit/report/g6/day10_beyond_the_prompt_page_02.png": "a15be920316e589151963cc41f9b4232484332ae49512292329645a0a52c5bb0",
+    "projects/day05_day10_beyond_the_summit/report/g6/day10_beyond_the_prompt_page_03.png": "d752a7a1c60d908ebf3340b311fe01079166fdc54161612f384535b0cbdc18ac"
+  },
+  "content_sha256": "638725e06b1ecce86e98f9b23e7996e5e09408e93e036cd3d23531923466ba20",
+  "files": {
+    "index.html": "47ee2ab07eb717dd8981913ce6bc6672cd87014fb1def352a48d65ef4212a364",
+    "gallery/gallery.css": "8fc1d72394f6bad06d63d6a821be0f9efa897f5a4ae1304259b1c9fcd1e34cc4",
+    "gallery/gallery.js": "98267bf2545d46945dd3cf8e558541b2e89206827aa5b3343ba7206eafa3d564",
+    "gallery/assets/day01.webp": "c674535fd8715f8a5d3a3fa851d7e968fa3d2174485c662f8ae76b1ffab723ea",
+    "gallery/assets/day02.webp": "8c560bb72f4352ccc1e630bdcc10dc8ed55f119ad21d32d6ed9933040e086203",
+    "gallery/assets/day03.webp": "0d48fc59ec20e593a4491583fa30e362a40b88cbacbf3ee9e9998b143ca37741",
+    "gallery/assets/day04.webp": "4faa25e3b7696452bc5f732fbd5bfdc828ba218ddaef78a6f1efd687a39d7db1",
+    "gallery/assets/day05.webp": "19eff114af8490937510d6b5bf2c040e2fffa06dcdd9bed31b9fa0e2e178d6eb",
+    "gallery/assets/day10.webp": "db0cc67b34c2845922a0374eaf541fbccfc5945b6ab636b1c8243fc6c4c9c754",
+    "gallery/assets/panorama.webp": "18af7a44a700fc9bc299872c3d611f9738af8965899f6ac92d963d694b0dfa00",
+    "reports/day01/index.html": "3e3dd4ed58ce76a595d202858cd3f1556eed018b4dac1431cbd215e8e41e2896",
+    "reports/day01/report.pdf": "59e74569779e1104d117aea2ab2f859dcdf611e27695b14b3f6fb10143313bd3",
+    "reports/day02/index.html": "e825347f4293f74f64c66daefd376864034948f00e746d760e1d1a3c389cc12e",
+    "reports/day02/report.pdf": "ccb3cf5612e446cdaabce344e21d8b1142c4fcb1f9925ee0a1646487b8032274",
+    "reports/day03/index.html": "1677247cdb1f327846655ad135545f677b4878c3e96ac07cc8468f2a6eeca70f",
+    "reports/day03/report.pdf": "0216602031f666467e81c6dafefa04b172ee0c9ab0eafaaa3d2bcbeca39fd3cd",
+    "reports/day04/index.html": "c7170faed1d1b4534cc61996012105d6854539ad8a8cbacf3d85287f6eea4a88",
+    "reports/day04/report.pdf": "6fa9c4d99ab54b863cfac6df01a126a14e5be66c8111b7ad1ea204c90a3b8e7d",
+    "reports/day05/index.html": "260b326949f4aa5094dafe84d7078fd6dd25fd04abfa5881959bf523de58bb01",
+    "reports/day10/index.html": "f2ca843f34884c1956cfcb88f8ddda1acbda9bf33d0f3c12dfb242fe5d500714",
+    "reports/day05/images/page_01.png": "cfd3ed48c4e06f264320d29874ce9c5c2183dffaf461cb70c2c5ef01b31ef262",
+    "reports/day05/images/page_02.png": "2e88c375d51e6dc728241fb5288cf1e825a8886c34849da33c3cdb6a396fd6d0",
+    "reports/day05/images/page_03.png": "201f409287acf1b19cadf36638a3511ba5f2a34df5439109ab56f6183c5da63f",
+    "reports/day10/images/page_01.png": "6310d382019985b09646994a2dda1aec7dec1ef9cec0c8dab640191f20ee9a1a",
+    "reports/day10/images/page_02.png": "a15be920316e589151963cc41f9b4232484332ae49512292329645a0a52c5bb0",
+    "reports/day10/images/page_03.png": "d752a7a1c60d908ebf3340b311fe01079166fdc54161612f384535b0cbdc18ac"
+  }
+}

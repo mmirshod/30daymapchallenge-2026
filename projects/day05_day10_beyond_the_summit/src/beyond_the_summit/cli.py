@@ -147,6 +147,13 @@ def stage_pages_command():
     with Run('g6-stage-pages').capture():display(stage_pages())
 
 
+@app.command('build-gallery')
+def build_gallery_command():
+    """Generate the collection and source-based report pages; preserve prior days."""
+    from .gallery import build_gallery
+    with Run('gallery-build').capture():display(build_gallery())
+
+
 @app.command()
 def pilot(phase: str='local'):
     """Run the bounded pilot only when resources and prerequisites pass."""

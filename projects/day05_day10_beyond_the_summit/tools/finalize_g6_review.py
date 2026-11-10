@@ -7,11 +7,11 @@ summary=json.loads(summary_path.read_text(encoding='utf-8'))
 qa=p/'report/g6/qa'
 result=json.loads((qa/'browser_validation.json').read_text())
 if result['status']!='passed':raise ValueError('Browser QA must pass')
+summary['files']={name:sha for name,sha in summary['files'].items()
+    if not any(part.startswith('qa') for part in (p/name).relative_to(p).parts)}
 for name,sha in summary['files'].items():
-    if (p/name).is_relative_to(qa):continue
     if hashlib.sha256((p/name).read_bytes()).hexdigest()!=sha:raise ValueError('Changed non-QA output: '+name)
-for path in qa.rglob('*'):
-    if path.is_file():summary['files'][str(path.relative_to(p))]=hashlib.sha256(path.read_bytes()).hexdigest()
-summary['browser_qa']={'checks':len(result['checks']),'status':'passed','max_error':result['score_max_error']}
+summary['browser_qa']={'checks':len(result['checks']),'status':'passed','max_error':result['score_max_error'],
+    'evidence_sha256':hashlib.sha256((qa/'browser_validation.json').read_bytes()).hexdigest()}
 summary_path.write_text(json.dumps(summary,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
 print('Sealed',len(result['checks']),'browser checks; all report/site hashes verified.')

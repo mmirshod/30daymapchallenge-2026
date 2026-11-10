@@ -186,7 +186,9 @@ def build_publication():
         'templates':{f.name:fingerprint(f) for f in (PROJECT/'templates').iterdir() if f.is_file()},
         'site_files':len(list(web.rglob('*'))),'site_bytes':sum(f.stat().st_size for f in web.rglob('*') if f.is_file()),
         'reports':[str(p.relative_to(PROJECT)) for p in pdfs],
-        'inputs':provenance,'files':{str(f.relative_to(PROJECT)):fingerprint(f) for directory in [web,PROJECT/'report/g6'] for f in directory.rglob('*') if f.is_file()}}
+        'inputs':provenance,'files':{str(f.relative_to(PROJECT)):fingerprint(f)
+            for directory in [web,PROJECT/'report/g6'] for f in directory.rglob('*')
+            if f.is_file() and not any(part.startswith('qa') for part in f.relative_to(directory).parts)}}
     atomic_json(PROJECT/'data/processed/g6_export.json',summary)
     return {k:v for k,v in summary.items() if k not in ['files','inputs']}
 

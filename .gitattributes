@@ -2,6 +2,9 @@
 # Disable EOL conversion only for the new project/export, preserving prior days.
 /projects/day05_day10_beyond_the_summit/** -text
 /docs/day05/** -text
+/docs/gallery/** -text
+/docs/reports/** -text
+/docs/index.html -text
 /docs/environment_audit.md -text
 /docs/data_inventory.md -text
 /docs/implementation_plan.md -text

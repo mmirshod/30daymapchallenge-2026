@@ -34,13 +34,40 @@ try:
         }''')
         assert fixture['errN']<1e-10 and fixture['errM']<1e-10 and fixture['zero'] and fixture['invalid']
         assert fixture['winner']=='node:1544318728';checks.append('browser scores reproduce every published NPS and MPS')
+        assert page.locator('#leader-button').get_attribute('data-summit')==fixture['winner']
+        assert page.locator('.rank-pin').count()==1 and page.locator('.selection-halo').count()==1
+        page.locator('#show-top10').check()
+        assert page.locator('.rank-pin').count()==10
+        page.locator('#search').fill('no-such-summit-test')
+        assert page.locator('#ranking-body tr').count()==0
+        assert page.locator('.rank-pin').count()==10 and page.locator('.selection-halo').count()==1
+        assert page.locator('#leader-button').get_attribute('data-summit')==fixture['winner']
+        page.locator('#search').fill('')
+        checks.append('persistent mode leader, optional Top 10 and selected halo remain visible through filters')
+        page.locator('#map').scroll_into_view_if_needed()
+        box=page.locator('#map').bounding_box();zoom=page.evaluate('map.getZoom()')
+        page.mouse.move(box['x']+box['width']*.6,box['y']+min(box['height']*.55,500))
+        page.mouse.wheel(0,-400)
+        page.wait_for_function('(z)=>map.getZoom()>z',arg=zoom)
+        page.wait_for_function('!map._animatingZoom')
+        zoomed=page.evaluate('map.getZoom()');page.mouse.wheel(0,400)
+        page.wait_for_function('(z)=>map.getZoom()<z',arg=zoomed)
+        page.wait_for_function('!map._animatingZoom')
+        assert page.evaluate('map.touchZoom.enabled()')
+        page.evaluate('()=>{map.fitBounds(state.data.bounds,{animate:false});}')
+        checks.append('wheel/touchpad zoom in and out; touch pinch handler enabled')
         page.locator('#mountaineering').click();assert page.locator('#ranking-body tr').first.locator('button').get_attribute('data-summit')=='node:2556670543'
+        assert page.locator('#leader-button').get_attribute('data-summit')=='node:2556670543'
+        assert page.locator('.rank-pin').count()==10
         checks.append('published MPS winner reproduced')
         page.locator('#ranking-body tr').first.locator('button').click();page.wait_for_selector('#profile svg')
         page.locator('#show-connections').check();page.locator('#horizon-only').check()
         assert '12 visible connections' in page.locator('#connection-count').inner_text();checks.append('Zamok detail, skyline and 12 non-self Horizon connections')
         page.evaluate("document.getElementById('w-terrain').value=100;document.getElementById('w-terrain').dispatchEvent(new Event('input',{bubbles:true}))")
         assert 'Your weights' in page.locator('#ranking-label').inner_text();checks.append('slider reranks and marks custom scores')
+        assert page.evaluate("document.getElementById('leader-button').dataset.summit===state.ranking[0].id")
+        page.locator('#show-top10').uncheck();assert page.locator('.rank-pin').count()==1
+        checks.append('leader follows mode/custom weights and Top 10 can be hidden independently')
         with page.expect_download() as event:page.locator('#download').click()
         event.value.save_as(output/'custom_ranking.csv')
         rows=list(csv.DictReader((output/'custom_ranking.csv').open(encoding='utf-8-sig')))

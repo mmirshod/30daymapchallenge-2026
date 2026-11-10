@@ -1,0 +1,95 @@
+days:
+  - id: day01
+    number: '01'
+    topic: Points
+    category: map
+    title: {ru: 'Проект «Горец»', en: 'Project Gorets'}
+    subtitle: {ru: 'Вершины и горные озёра над Чарваком', en: 'Summits and mountain lakes above Charvak'}
+    summary: {ru: 'Точки, с которых начинается знакомство с горами: программы «21 Горизонт» и «21 Мираж» на фоне рельефа Западного Тянь-Шаня.', en: 'A first encounter with the mountains: the 21 Horizon and 21 Mirage programs against the relief of the Western Tien Shan.'}
+    images: ['docs/day01/Day 01 - Report.png']
+    stats: [{value: '20', ru: 'вершин в исходном наборе', en: 'summits in the supplied dataset'}, {value: '24', ru: 'точки горных озёр', en: 'lake waypoints'}, {value: '02', ru: 'программы «Горца»', en: 'Gorets programs'}]
+    method:
+      - {ru: 'Исходные GPX-точки программ сведены в географический набор и разделены на вершины «Горизонта» и озёра «Миража». В наборе 20 точек вершин и 24 точки озёр; это не утверждение о полноте официальных списков.', en: 'Supplied program GPX waypoints were assembled into a geographic dataset and separated into Horizon summits and Mirage lakes: 20 summit points and 24 lake points, not a claim of complete official rosters.'}
+      - {ru: 'Условные знаки наложены на рельеф и контекст водоёмов и границ. Точки показывают положение объектов, а не маршруты восхождения или контуры озёр.', en: 'Distinct point symbols are placed over terrain, water and boundary context. They indicate locations, not ascent routes or lake outlines.'}
+      - {ru: 'Интерактивная карта первого дня сохранена в исходном виде. Постер ниже — исходный картографический экспорт; PDF собран из этого изображения без изменения содержания.', en: 'The original Day 01 interactive map is preserved. The poster below is the original cartographic export; the downloadable PDF wraps that image without changing its contents.'}
+    caveat: {ru: 'Карта не подтверждает доступность, состояние троп и возможность восхождения. Источники постера: OpenStreetMap, Copernicus DEM GLO-30 и geoBoundaries.', en: 'The map does not confirm access, trail conditions or climbing suitability. Poster sources: OpenStreetMap, Copernicus DEM GLO-30 and geoBoundaries.'}
+    source: https://github.com/mmirshod/30daymapchallenge-2026/tree/main/projects/day01_points
+    interactive: day01/
+  - id: day02
+    number: '02'
+    topic: Lines
+    category: analysis
+    title: {ru: 'Там, где кончаются дороги', en: 'Where the Roads End'}
+    subtitle: {ru: 'На какую высоту ведут дороги Узбекистана?', en: 'How high can roads take you in Uzbekistan?'}
+    summary: {ru: 'Асфальт, обычные дороги и треки: сравнение высоты дорожной сети по данным OpenStreetMap и Copernicus DEM.', en: 'Asphalt, conventional roads and tracks: comparing the elevation of the road network using OpenStreetMap and Copernicus DEM.'}
+    images: ['docs/day02/Day 02 - Report_1.png', 'docs/day02/Day 02 - Report_2.png']
+    stats: [{value: '2 447 м', ru: 'кандидат с тегом asphalt', en: 'tagged asphalt candidate'}, {value: '3 080 м', ru: 'обычная дорожная сеть', en: 'conventional-road candidate'}, {value: '3 420 м', ru: 'кандидат с классом track', en: 'track-class candidate'}]
+    method:
+      - {ru: 'Дороги из OSM разделены на объекты с явным surface=asphalt, обычные дорожные классы без track и все потенциально проезжие классы с track. Категории пересекаются; теги доступа сохраняются для проверки.', en: 'OSM roads are classified into explicit surface=asphalt, conventional road classes excluding track, and potentially drivable classes including track. Categories overlap; access tags are retained for review.'}
+      - {ru: 'Вдоль исходных линий создаются геодезические пробы с шагом не более 30 м, включая исходные вершины геометрии. Высоты извлекаются из плиток Copernicus DEM. Туннели исключены: высота поверхности над тоннелем не равна высоте дороги.', en: 'Geodesic samples are placed no more than 30 m apart along original lines, including their vertices. Elevations are sampled from Copernicus DEM tiles. Tunnels are excluded because terrain above a tunnel is not the road elevation.'}
+      - {ru: 'Точки пространственно связываются с районами; для каждой категории сохраняются максимумы и кандидаты для проверки. Показанные высоты — выборочные оценки нанесённых на карту дорог, а не дорожная съёмка.', en: 'Samples are spatially assigned to districts; category maxima and review candidates are retained. Reported heights are sampled mapped-road estimates, not surveyed road elevations.'}
+    caveat: {ru: 'OSM-класс не гарантирует проезд или открытый доступ. Неполные теги покрытия, границы, мосты и разрешение DEM влияют на результат. Числа в README помечены как предварительные оценки.', en: 'An OSM class does not guarantee vehicle access. Sparse surface tags, boundaries, bridges and DEM resolution affect results. The project README labels these values preliminary estimates.'}
+    source: https://github.com/mmirshod/30daymapchallenge-2026/tree/main/projects/day02_lines
+  - id: day03
+    number: '03'
+    topic: Polygons
+    category: analysis
+    title: {ru: 'Анатомия горных хребтов', en: 'Anatomy of Mountain Ridges'}
+    subtitle: {ru: 'Семь горных районов Ташкентской области', en: 'Seven ridge regions of Tashkent'}
+    summary: {ru: 'Полигоны превращают отдельные вершины в географическую историю: плотность, медианная высота и доля высокогорья.', en: 'Polygons turn individual peaks into a geographic story: density, median elevation and the share of high mountains.'}
+    images: ['docs/day03/Day 03 - Report.png']
+    stats: [{value: '1 302', ru: 'вершины от 1 800 м', en: 'summits at or above 1,800 m'}, {value: '07', ru: 'горных полигонов', en: 'ridge-region polygons'}, {value: '03', ru: 'показателя на карте', en: 'mapped measures'}]
+    method:
+      - {ru: 'Семь горных районов очерчены вручную как интерпретация хребтов. В них агрегируется набор вершин OSM высотой от 1 800 м; пропущенные высоты восполнены значениями Copernicus DEM с сохранением происхождения.', en: 'Seven ridge regions were delineated manually as an interpretation of the mountain ranges. OSM summits at or above 1,800 m are aggregated within them; missing heights use Copernicus DEM with provenance retained.'}
+      - {ru: 'Для каждого полигона сопоставляются плотность вершин на 100 км², медианная высота и доля вершин от 3 000 м. Три карты показывают разные свойства одного и того же набора.', en: 'Each polygon is summarized by peaks per 100 km², median elevation and the share of peaks at or above 3,000 m. The three maps describe different properties of the same inventory.'}
+      - {ru: 'Исходный постер показывает наибольшую плотность в Майдантале, 476 вершин в Чаткале и 83 четырёхтысячника в Пскеме. Это результаты исходного экспорта, без нового расчёта на этой странице.', en: 'The original poster highlights Maydantal density, 476 Chatkal peaks and 83 Pskem four-thousanders. These are the original export results; this page does not rerun the analysis.'}
+    caveat: {ru: 'Ручные контуры — исследовательская интерпретация, а не точные водоразделы. Полнота OSM и разница между высотой точки и ячейки DEM влияют на сводные значения.', en: 'Hand-drawn regions are an exploratory interpretation rather than exact watershed boundaries. OSM completeness and point-versus-DEM-cell elevations affect the summaries.'}
+    source: https://github.com/mmirshod/30daymapchallenge-2026/tree/main/projects/day03_polygons
+  - id: day04
+    number: '04'
+    topic: Clusters
+    category: analysis
+    title: {ru: 'Как сгруппировать горы?', en: 'Can Mountains Be Clustered by Terrain?'}
+    subtitle: {ru: 'Одни вершины, три способа разделить пространство', en: 'The same summits, three ways of grouping space'}
+    summary: {ru: 'Сравнение ручных районов, пространственных сообществ и групп с учётом локального рельефа.', en: 'A comparison of human-interpreted regions, spatial communities and groups informed by local terrain.'}
+    images: ['docs/day04/Day 04 - Report.png']
+    stats: [{value: '07', ru: 'ручных районов', en: 'human-interpreted regions'}, {value: '16', ru: 'пространственных групп', en: 'spatial-only groups'}, {value: '32', ru: 'группы с учётом рельефа', en: 'terrain-aware groups'}]
+    method:
+      - {ru: 'Сравниваются три разбиения тех же 1 302 вершин в одном охвате и проекции EPSG:32642. Семь ручных районов служат интерпретируемым ориентиром для сравнения.', en: 'Three partitions of the same 1,302 summits are compared at the same extent in EPSG:32642. Seven manually interpreted regions provide a readable reference.'}
+      - {ru: 'Пространственный вариант использует граф ближайших соседей и выделение сообществ Louvain. Он образует 16 групп, опираясь на близость вершин.', en: 'The spatial-only variant uses a nearest-neighbor graph and Louvain community detection. It forms 16 groups based on proximity.'}
+      - {ru: 'Вариант с рельефом использует локальные седловинные связи в пределах 3 км и образует 32 группы. Постер сопоставляет эти группы с ручными районами; большее число групп само по себе не означает лучшего совпадения.', en: 'The terrain-aware variant uses local saddle connections within 3 km and forms 32 groups. The poster compares them with the hand-drawn regions; more groups do not by themselves imply better agreement.'}
+    caveat: {ru: 'Группы зависят от определения соседства, параметров графа, модели рельефа и масштаба анализа. Ручные районы — ориентир для обсуждения, а не независимая истина.', en: 'Clusters depend on neighborhood definitions, graph parameters, terrain and scale. The hand-drawn regions are a discussion reference, not independent ground truth.'}
+    source: https://github.com/mmirshod/30daymapchallenge-2026/tree/main/projects/day04_clusters
+  - id: day05
+    number: '05'
+    topic: Sight
+    category: interactive
+    title: {ru: 'За пределами вершины', en: 'Beyond the Summit'}
+    subtitle: {ru: 'Где искать лучшие горные панорамы?', en: 'Where are the best mountain panoramas?'}
+    summary: {ru: 'Интерактивный атлас 1 302 вершин: видимость рельефа, линия горизонта и собственные веса рейтинга.', en: 'An interactive atlas of 1,302 summits: terrain visibility, skylines and your own ranking weights.'}
+    images: ['projects/day05_day10_beyond_the_summit/report/g6/day05_beyond_the_summit_page_01.png', 'projects/day05_day10_beyond_the_summit/report/g6/day05_beyond_the_summit_page_02.png', 'projects/day05_day10_beyond_the_summit/report/g6/day05_beyond_the_summit_page_03.png']
+    stats: [{value: '1 302', ru: 'наблюдательные вершины', en: 'observation summits'}, {value: '100 км', ru: 'радиус анализа', en: 'analysis radius'}, {value: '15', ru: 'объектов «Горизонта»', en: 'Horizon landmarks'}]
+    method:
+      - {ru: 'GDAL рассчитывает зоны видимости на 30-метровой модели Copernicus с высотой наблюдателя 1,7 м, кривизной Земли и коэффициентом рефракции 0,14286. Расчётный радиус в проекции — 100 км.', en: 'GDAL viewsheds use 30 m Copernicus terrain, a 1.7 m observer, Earth curvature and refraction coefficient 0.14286. The projected analysis radius is 100 km.'}
+      - {ru: 'NPS объединяет рельеф, видимые точки вершин, свойства горизонта и дальность. MPS добавляет видимость 15 объектов программы «Горизонт». Веса можно менять в браузере, сохраняя исходные геометрические расчёты.', en: 'NPS combines terrain, visible peak-point proxies, skyline properties and distance. MPS adds visibility of 15 Horizon landmarks. Browser weights change the ranking while keeping the geometric calculations fixed.'}
+      - {ru: 'Лидер режима показан постоянно; Top 10 включается отдельно. Выбранная вершина имеет голубое выделение, профиль горизонта, компоненты оценки и доступные линии видимости.', en: 'The mode leader is always marked; Top 10 can be enabled separately. A selected summit has a blue highlight, skyline profile, component scores and available visibility connections.'}
+    caveat: {ru: 'Экспериментальная модель, не оценка условий похода. Видимость ячейки поверхности не гарантирует распознавания вершины. Результаты зависят от разрешения DEM, полноты OSM и выбранных весов.', en: 'An exploratory model, not a trip-conditions assessment. Visible surface cells do not guarantee summit recognition. Results depend on DEM resolution, OSM completeness and chosen weights.'}
+    source: https://github.com/mmirshod/30daymapchallenge-2026/tree/main/projects/day05_day10_beyond_the_summit
+    interactive: day05/
+    pdf: day05/downloads/day05_beyond_the_summit.pdf
+  - id: day10
+    number: '10'
+    topic: Prompting Only
+    category: process
+    title: {ru: 'За пределами промпта', en: 'Beyond the Prompt'}
+    subtitle: {ru: 'Как создавался геопространственный проект с Codex', en: 'Building a geospatial project with Codex'}
+    summary: {ru: 'От первого запроса до проверяемого результата: среда Windows, пилоты, ошибки, решения и воспроизводимый конвейер.', en: 'From the first prompt to an inspectable result: Windows constraints, pilots, failures, decisions and a reproducible pipeline.'}
+    images: ['projects/day05_day10_beyond_the_summit/report/g6/day10_beyond_the_prompt_page_01.png', 'projects/day05_day10_beyond_the_summit/report/g6/day10_beyond_the_prompt_page_02.png', 'projects/day05_day10_beyond_the_summit/report/g6/day10_beyond_the_prompt_page_03.png']
+    stats: [{value: 'G1–G6', ru: 'контрольные этапы', en: 'checkpoints'}, {value: '03', ru: 'страницы о процессе', en: 'pages about the process'}, {value: 'Python', ru: 'обработка и публикация', en: 'processing and publication'}]
+    method:
+      - {ru: 'Человек задавал исследовательский вопрос, уточнял объекты и масштаб анализа, разрешал вычисления и публикацию. Codex писал и запускал код, проверял данные и готовил материалы.', en: 'The human set the research question, clarified targets and scope, and authorized computation and publication. Codex wrote and ran code, checked data and generated the deliverables.'}
+      - {ru: 'Перед массовым запуском проведены небольшие пилоты. Сохранены контрольные точки по вершинам, хеши входов и выходов, реальные запросы пользователя и журналы запусков.', en: 'Small pilots preceded full execution. Per-summit checkpoints, input/output hashes, actual supplied prompts and execution logs were retained.'}
+      - {ru: 'Отчёт описывает смену GRASS на GDAL, отказ от грубого DEM, управление памятью и влияние решений на результат. Статистика запусков не выдаётся за число диалогов с агентом или активное время разработки.', en: 'The report documents the move from GRASS to GDAL, rejection of coarse terrain, memory controls and how decisions changed results. Execution counts are not presented as conversation counts or active development hours.'}
+    caveat: {ru: 'PDF фиксирует состояние на момент экспорта. Он документирует процесс разработки, а не подтверждает географические результаты независимыми наблюдениями.', en: 'The PDF is a snapshot at export time. It documents development rather than independently confirming geographic results.'}
+    source: https://github.com/mmirshod/30daymapchallenge-2026/tree/main/projects/day05_day10_beyond_the_summit/docs
+    pdf: day05/downloads/day10_beyond_the_prompt.pdf

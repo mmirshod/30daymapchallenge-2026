@@ -23,7 +23,18 @@ for name in ['index.html','day01/index.html']:
     with urllib.request.urlopen(base+name+'?release='+args.sha,timeout=60) as response:
         assert response.status==200
         results.append({'path':name,'status':response.status,'bytes':len(response.read())})
+gallery_path=repo/'docs/gallery/export.json'
+if gallery_path.exists():
+    gallery=json.loads(gallery_path.read_text(encoding='utf-8'))
+    selected=[name for name in gallery['files'] if name in ['index.html','gallery/gallery.css','gallery/gallery.js']
+        or name.endswith('/index.html') or name.endswith('/report.pdf')]
+    for name in selected:
+        with urllib.request.urlopen(base+name+'?release='+args.sha,timeout=60) as response:
+            data=response.read();status=response.status
+        sha=hashlib.sha256(data).hexdigest()
+        if status!=200 or sha!=gallery['files'][name]:raise ValueError('Published gallery mismatch: '+name)
+        results.append({'path':name,'status':status,'bytes':len(data),'sha256':sha})
 result={'status':'passed','commit':args.sha,'verified_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'url':base+'day05/','assets':results}
 output=p/'report/g6/qa_live';output.mkdir(parents=True,exist_ok=True)
 (output/'http_validation.json').write_text(json.dumps(result,indent=2),encoding='utf-8')
-print('Verified live export:',len(results),'HTTP assets including both PDF hashes and existing Day 01.')
+print('Verified live export:',len(results),'HTTP assets including PDFs, gallery/report pages and existing Day 01.')
