@@ -1,15 +1,20 @@
 """Real Edge acceptance checks using the existing browser, served locally."""
-import contextlib,csv,functools,http.server,json,threading,time
+import argparse,contextlib,csv,functools,http.server,json,threading,time
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 
 project=Path(__file__).resolve().parents[1]
-root=project/'web';output=project/'report/g6/qa';output.mkdir(parents=True,exist_ok=True)
+parser=argparse.ArgumentParser();parser.add_argument('--url',help='Verify a deployed explorer instead of starting a local server')
+args=parser.parse_args()
+root=project/'web';output=project/('report/g6/qa_live' if args.url else 'report/g6/qa');output.mkdir(parents=True,exist_ok=True)
 class QuietHandler(http.server.SimpleHTTPRequestHandler):
     def log_message(self,*args):pass
-server=http.server.ThreadingHTTPServer(('127.0.0.1',0),functools.partial(QuietHandler,directory=str(root)))
-thread=threading.Thread(target=server.serve_forever,daemon=True);thread.start()
-url=f'http://127.0.0.1:{server.server_port}/'
+server=None;thread=None
+if args.url:url=args.url
+else:
+    server=http.server.ThreadingHTTPServer(('127.0.0.1',0),functools.partial(QuietHandler,directory=str(root)))
+    thread=threading.Thread(target=server.serve_forever,daemon=True);thread.start()
+    url=f'http://127.0.0.1:{server.server_port}/'
 errors=[];failed=[];checks=[]
 try:
     with sync_playwright() as p:
@@ -88,8 +93,8 @@ try:
         assert not errors,errors
         assert not failed,failed
         browser.close()
-    result={'status':'passed','checks':checks,'score_max_error':fixture,'page_errors':errors,'failed_http_responses':failed,'browser':'Installed Microsoft Edge via Playwright; no browser download'}
+    result={'status':'passed','url':url if args.url else 'local preview','checks':checks,'score_max_error':fixture,'page_errors':errors,'failed_http_responses':failed,'browser':'Installed Microsoft Edge via Playwright; no browser download'}
     (output/'browser_validation.json').write_text(json.dumps(result,indent=2),encoding='utf-8')
     print(json.dumps(result,indent=2))
 finally:
-    server.shutdown();server.server_close();thread.join(timeout=3)
+    if server:server.shutdown();server.server_close();thread.join(timeout=3)
