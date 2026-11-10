@@ -1,0 +1,50 @@
+schema_version: 1
+study:
+  minimum_elevation_m: 1800
+  expected_observers: 1302
+  scope: existing_mapped_tashkent_summits_at_or_above_1800m
+  candidate_file: projects/day03_polygons/data/processed/peaks_with_ridges.gpkg
+  candidate_layer: peaks
+  boundary_file: projects/day03_polygons/data/processed/tashkent_boundary.gpkg
+  boundary_layer: tashkent_boundary
+  dem_file: projects/day03_polygons/data/processed/tashkent_dem_30m.tif
+  dem_cache: projects/day02_lines/data/raw/dem
+  osm_file: projects/day03_polygons/data/raw/uzbekistan-261102.osm.pbf
+  landmark_file: projects/day01_points/data/processed/gorets_points.gpkg
+  landmark_layer: gorets_points
+analysis:
+  viewshed_backend: gdal
+  gdal_viewshed_mode: GVM_Edge
+  quality_policy: exploratory_with_disclosed_engine_disagreement
+  crs: EPSG:32642
+  radius_m: 100000
+  sensitivity_radii_m: []
+  observer_height_m: 1.7
+  terrain_target_height_m: 0.0
+  refraction_coefficient: 0.14286
+  earth_curvature: true
+  baseline_resolution_m: 30
+  pilot_resolution_m: 90
+  distance_bands_m: [0, 20000, 50000, 100000]
+landmarks:
+  excluded_object_types: [lake]
+  lake_exclusion: user_approved_2026_11_10
+resources:
+  pilot_entry_available_gib: 4
+  pilot_entry_available_commit_gib: 4
+  runtime_reserve_available_gib: 1
+  runtime_reserve_available_commit_gib: 2
+  free_disk_reserve_gib: 15
+  grass_memory_mb: 512
+  workers: 3
+  batch_size: 10
+  pilot_wall_seconds: 7200
+  pilot_scratch_gib: 8
+approvals:
+  candidate_scope: approved_2026_11_06
+  setup_preparation_and_pilot: approved_2026_11_06
+  backend_selection: gdal_approved_2026_11_10
+  production_analysis: true
+  production_authorization: approved_2026_11_10_after_three_worker_test
+  deployment: false
+
