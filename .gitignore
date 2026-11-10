@@ -34,3 +34,6 @@ __pycache__/
 .ipynb_checkpoints/
 
 cache/
+
+# Isolated no-admin Beyond the Summit native runtime (short Windows prefix).
+/.bts/

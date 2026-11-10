@@ -1,0 +1,3 @@
+okay, now let's ignore the lakes visiblity in our logic for ranking, since finding polygons is almost impossible now. 
+
+Additionally, you may do skipped G1 test and start G3 fully even if threshold is not met (but i think it is almost 4gb available now)

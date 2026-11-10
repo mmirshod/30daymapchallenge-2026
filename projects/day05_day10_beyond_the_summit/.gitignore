@@ -1,0 +1,14 @@
+.runtime/
+.pytest_cache/
+__pycache__/
+*.egg-info/
+data/raw/
+data/interim/
+data/processed/
+data/web/
+logs/runs/
+logs/analysis/
+pytest-cache-files-*/
+report/
+web/
+

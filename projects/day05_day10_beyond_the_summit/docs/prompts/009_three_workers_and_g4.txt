@@ -1,0 +1,1 @@
+retain only 1 GiB reserved, test first with 3 workers, then after successfull test start G4 full analysis. While processing G4, make sure to have checkpoints in order to reduce number of workers anytime

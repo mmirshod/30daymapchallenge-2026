@@ -1,0 +1,7 @@
+i closed some processes, so you may want to check once again regardding the free RAM. For the purpose of this project we consider only 1800+m peaks
+
+Regarding the standalone GDAL when tried to create one, i faced error with building some dependencies on windows. If you can resolve it, you can install additional packages.
+
+Note that i dont have admin rights on this laptop
+
+You may proceed further according to the plan now

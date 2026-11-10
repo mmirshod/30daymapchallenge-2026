@@ -1,0 +1,77 @@
+[
+  {
+    "file": "001_project_overview.md",
+    "sha256": "7797251f742b2536631e9b157206e945fffc5ac7fd2dfdbbdc83c0f00c411c96",
+    "capture_kind": "actual supplied text"
+  },
+  {
+    "file": "002_implementation_authorization.txt",
+    "sha256": "889a535035115b146bd9619e38daec606854cf136949c4593303859cd4809108",
+    "capture_kind": "actual supplied text"
+  },
+  {
+    "file": "003_start_pilot.txt",
+    "sha256": "0e39812277b648ce7752ca78ae04c8e4250ec86f5e6c2b0073d240b88e68f8d2",
+    "capture_kind": "actual supplied text"
+  },
+  {
+    "file": "004_gdal_replan.txt",
+    "sha256": "578b120e7dbd3eb8b2304857b9cee6e496e418f5267b73928d8c3fb96942731f",
+    "capture_kind": "actual supplied text"
+  },
+  {
+    "file": "005_g1_authorization.txt",
+    "sha256": "453be653454e120fd8d249a8e91653e9abe1377f7735f323df9bd64d69f7586d",
+    "capture_kind": "actual supplied text"
+  },
+  {
+    "file": "006_g1_validate_anyway.txt",
+    "sha256": "7ca1a5558a703fee92d659d260dd88e5ee2da7f0a047aa443105c51080eacff7",
+    "capture_kind": "actual supplied text"
+  },
+  {
+    "file": "007_g2_authorization.txt",
+    "sha256": "55f7939dae0921ac0cf991958e51a8f2789083f8fee815175ce65fe8352f0ef1",
+    "capture_kind": "actual supplied text"
+  },
+  {
+    "file": "008_lake_exclusion_and_g3.txt",
+    "sha256": "f08328958a1f5d70d2c73cfc3f8391cf178eae138709f7a2d1704aca21a8e201",
+    "capture_kind": "actual supplied text"
+  },
+  {
+    "file": "009_three_workers_and_g4.txt",
+    "sha256": "65bfd6cf35e0e099e6fc95ba9fc3169f1f9def5cb64e833bc92779d89d9e4df2",
+    "capture_kind": "actual supplied text"
+  },
+  {
+    "file": "010_status_request.txt",
+    "sha256": "2425f6913f532854217e5f391250fa69b5e2eec4c2546de0e2b7cd7383f6a899",
+    "capture_kind": "actual supplied text"
+  },
+  {
+    "file": "011_g5_authorization.txt",
+    "sha256": "16ab5ad2859a9e7bc946f464b9157c4b6c4d5f4ebc8c4a723340d3f89826db88",
+    "capture_kind": "actual supplied text"
+  },
+  {
+    "file": "012_mps_scope_clarification.txt",
+    "sha256": "756797d127795814cd68fd3b5868b2a8a203ce86a4ea9d23f394ad590a7f1683",
+    "capture_kind": "actual supplied text; whitespace normalized"
+  },
+  {
+    "file": "013_mps_authorization.txt",
+    "sha256": "f2ecdea82c7939b37f1a103519f0ed681a65852b3a2f7818216982d79ee867d2",
+    "capture_kind": "actual supplied text; whitespace normalized"
+  },
+  {
+    "file": "014_g6_export_authorization.txt",
+    "sha256": "0f89d91d2fe77e60d50e174dcc362d0d0ae23d2c4bc5851f673c3aadb3e08ea0",
+    "capture_kind": "actual supplied text; whitespace normalized"
+  },
+  {
+    "file": "015_translation_publication_authorization.txt",
+    "sha256": "cf8027779dba8b769ea10348ab9d85bb62b24cc0ab9d30762f28c188f9bbcf8d",
+    "capture_kind": "actual supplied text"
+  }
+]

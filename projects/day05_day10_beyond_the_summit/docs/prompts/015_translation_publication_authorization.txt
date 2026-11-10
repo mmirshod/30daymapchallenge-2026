@@ -1,0 +1,1 @@
+If possible (if easy) can you add russian translation for the website (as an option) and then commit and push all changes made throughout the project in several commits not just all in once. Then push it to the github and make sure the github pages deploy goes smoothly

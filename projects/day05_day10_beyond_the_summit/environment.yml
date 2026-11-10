@@ -1,0 +1,31 @@
+name: beyond-the-summit
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - grass=8.5
+  - llvm-openmp
+  - gdal
+  - rasterio
+  - geopandas
+  - pyogrio
+  - shapely
+  - pyproj
+  - numpy
+  - scipy
+  - pandas
+  - pyarrow
+  - networkx
+  - matplotlib-base
+  - reportlab
+  - jinja2
+  - pyyaml
+  - typer
+  - pytest
+  - tqdm
+  - psutil
+  - requests
+  - pyosmium
+  - pillow
+  - pip
+
