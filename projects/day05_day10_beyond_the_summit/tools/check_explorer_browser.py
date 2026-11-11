@@ -35,7 +35,9 @@ try:
         assert fixture['errN']<1e-10 and fixture['errM']<1e-10 and fixture['zero'] and fixture['invalid']
         assert fixture['winner']=='node:1544318728';checks.append('browser scores reproduce every published NPS and MPS')
         assert page.locator('#leader-button').get_attribute('data-summit')==fixture['winner']
-        assert page.locator('.rank-pin').count()==1 and page.locator('.selection-halo').count()==1
+        assert page.locator('.rank-pin').count()==10 and page.locator('.selection-halo').count()==0
+        page.locator('#leader-button').click()
+        assert page.locator('.selection-halo').count()==1
         page.locator('#show-top10').check()
         assert page.locator('.rank-pin').count()==10
         page.locator('#search').fill('no-such-summit-test')
@@ -60,7 +62,7 @@ try:
         assert page.locator('#leader-button').get_attribute('data-summit')=='node:2556670543'
         assert page.locator('.rank-pin').count()==10
         checks.append('published MPS winner reproduced')
-        page.locator('#ranking-body tr').first.locator('button').click();page.wait_for_selector('#profile svg')
+        page.locator('#ranking-body tr').first.locator('button').click();page.wait_for_selector('#profile svg');page.wait_for_function('viewshedOverlay && viewshedOverlay.getElement().complete && viewshedOverlay.getElement().naturalWidth>0')
         page.locator('#show-connections').check();page.locator('#horizon-only').check()
         assert '12 visible connections' in page.locator('#connection-count').inner_text();checks.append('Zamok detail, skyline and 12 non-self Horizon connections')
         page.evaluate("document.getElementById('w-terrain').value=100;document.getElementById('w-terrain').dispatchEvent(new Event('input',{bubbles:true}))")
@@ -85,7 +87,7 @@ try:
         page.locator('#reset').click();page.locator('#natural').click()
         share=page.url;page.reload(wait_until='networkidle');page.wait_for_function('window.BTSReady===true');assert page.url==share
         assert page.locator('#ranking-body tr').count()==1302;checks.append('shared URL state restored')
-        page.wait_for_selector('#profile svg');page.screenshot(path=str(output/'desktop.png'),full_page=True)
+        page.wait_for_selector('#profile svg');page.wait_for_function('viewshedOverlay && viewshedOverlay.getElement().complete && viewshedOverlay.getElement().naturalWidth>0');page.screenshot(path=str(output/'desktop.png'),full_page=True)
         page.set_viewport_size({'width':390,'height':844});page.screenshot(path=str(output/'mobile.png'),full_page=True)
         assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1');checks.append('390px layout has no horizontal overflow')
         page.locator('#map').screenshot(path=str(output/'map.png'))
@@ -117,6 +119,20 @@ try:
         assert page.locator('#mountaineering').inner_text()=='Mountaineering'
         assert page.locator('#ranking-label').inner_text()=='Published weights'
         checks.append('English restored without losing scoring state; Russian mobile has no overflow')
+        page.evaluate("()=>select('node:2587548227',true)")
+        page.wait_for_function("viewshedOverlay && viewshedOverlay.getElement().complete && viewshedOverlay.getElement().naturalWidth>0 && viewshedOverlay.getElement().src.includes('node_2587548227')")
+        assert page.evaluate("Number(getComputedStyle(map.getPane('tilePane')).zIndex)<Number(getComputedStyle(map.getPane('viewshedPane')).zIndex) && Number(getComputedStyle(map.getPane('viewshedPane')).zIndex)<Number(getComputedStyle(map.getPane('rankPane')).zIndex)")
+        assert page.evaluate('markers.getLayers().every(m=>m.options.fillOpacity<=0.2)')
+        checks.append('requested summit loads its own visible-ground raster above terrain and below rank markers')
+        page.locator('#map').screenshot(path=str(output/'viewshed_selected.png'))
+        page.locator('#clear-selection').click()
+        assert page.evaluate('!viewshedOverlay && markers.getLayers().every(m=>m.options.fillOpacity>0.9)')
+        assert page.locator('.selection-halo').count()==0
+        page.goto(url+'?lang=ru&mode=mps&summit=node%3A2587548227',wait_until='networkidle')
+        page.wait_for_function('window.BTSReady && viewshedOverlay && viewshedOverlay.getElement().complete && viewshedOverlay.getElement().naturalWidth>0')
+        assert page.locator('.rank-pin').count()==10
+        assert page.evaluate('markers.getLayers().every(m=>m.options.fillOpacity<=0.2)')
+        checks.append('clear selection restores all points; direct Russian summit URL enables Top 10 and its viewshed')
         assert not errors,errors
         assert not failed,failed
         browser.close()

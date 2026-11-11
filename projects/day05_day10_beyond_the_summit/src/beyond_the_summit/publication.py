@@ -90,7 +90,23 @@ def build_site(scores,web,assets,terrain,provenance):
         az=np.array(horizon['azimuth_true_degrees']);angle=np.array(horizon['horizon_degrees'])
         profile=[[round(float(a),2),round(float(b),3)] for a,b in zip(az[::10],angle[::10])]
         profile.sort(key=lambda pair:pair[0])
+        view_path=artifact('_view.tif')
+        with rasterio.open(view_path) as ds:
+            preview=ds.read(1,out_shape=(800,800),resampling=Resampling.nearest)
+            src_transform=ds.transform*Affine.scale(ds.width/800,ds.height/800)
+            transform,width,height=calculate_default_transform(ds.crs,3857,800,800,*ds.bounds)
+            warped=np.full((height,width),255,dtype=np.uint8)
+            reproject(preview,warped,src_transform=src_transform,src_crs=ds.crs,
+                dst_transform=transform,dst_crs=3857,src_nodata=255,dst_nodata=255,resampling=Resampling.nearest)
+        from PIL import Image
+        rgba=np.zeros((height,width,4),dtype=np.uint8);rgba[:,:,:3]=[0,145,220];rgba[:,:,3]=np.where(warped==1,170,0)
+        overlay=web/'data/viewsheds'/(r.observer_id.replace(':','_')+'.png');overlay.parent.mkdir(exist_ok=True)
+        Image.fromarray(rgba).save(overlay,optimize=True)
+        to_geo=Transformer.from_crs(3857,4326,always_xy=True)
+        west,south=to_geo.transform(transform.c,transform.f+height*transform.e)
+        east,north=to_geo.transform(transform.c+width*transform.a,transform.f)
         write_json(details/(r.observer_id.replace(':','_')+'.json'),{'profile':profile,'display_step_degrees':1,
+            'viewshed':{'url':overlay.relative_to(web).as_posix(),'bounds':[[south,west],[north,east]],'preview_only':True},
             'visible':[[target_index[e.target_id],round(float(e.distance_geodesic_m),1)] for e in visible.itertuples()],
             'unknown_target_ids':edges.loc[edges.visible.isna(),'target_id'].tolist()})
         x,y=tx.transform(r.x,r.y)
@@ -108,7 +124,9 @@ def build_site(scores,web,assets,terrain,provenance):
         'terrain_bounds':terrain['bounds'],'specials':[{'label':k.replace('_',' '),'id':v['observer_id']} for k,v in special.items()]}
     write_json(web/'data/explorer.json',d)
     env=Environment(loader=FileSystemLoader(PROJECT/'templates'),autoescape=select_autoescape(['html']))
-    html=env.get_template('explorer.html').render(weights=zip(['terrain','peaks','skyline','distance'],['Terrain','Visible peaks','Skyline','Distance'],[30,25,30,15]),
+    import hashlib
+    version=hashlib.sha256(''.join(fingerprint(PROJECT/'templates'/n) for n in ['app.js','style.css','i18n.js']).encode()).hexdigest()[:12]
+    html=env.get_template('explorer.html').render(asset_version=version,weights=zip(['terrain','peaks','skyline','distance'],['Terrain','Visible peaks','Skyline','Distance'],[30,25,30,15]),
         bands=sorted(set(scores.elevation_band)),landmarks=landmarks)
     (web/'index.html').write_text(html,encoding='utf-8')
     for name in ['style.css','scores.js','i18n.js','app.js']:shutil.copy2(PROJECT/'templates'/name,web/name)

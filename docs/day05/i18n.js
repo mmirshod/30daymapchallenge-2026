@@ -2,6 +2,11 @@
 (function(){
   'use strict';
   const ru={
+    'Clear selection':'???????? ?????',
+    'Blue overlay: visible ground ? reduced preview':'??????? ????: ??????? ??????????? ? ???????? ??????????',
+    'Current leader':'Лидер режима','Highlight Top 10':'Выделить Top 10',
+    'Selected summit':'Выбранная вершина','Mode leader':'Лидер режима',
+    'Leaders use the full cohort and current weights.':'Лидеры по всей выборке с текущими весами.',
     'Skip to explorer':'Перейти к карте',
     'DAY 05 · SIGHT / DAY 10 · PROMPTING ONLY':'ДЕНЬ 05 · ВИД / ДЕНЬ 10 · ТОЛЬКО ПРОМПТЫ',
     'Read the method ↗':'О методике ↗',
@@ -69,6 +74,7 @@
     let result=ru[core]??ru[trimmed];
     if(result===undefined){
       result=core
+        .replace(/^Selected summit: /,'Выбранная вершина: ')
         .replace(/^(\d+) of 1,302 summits$/,'$1 из 1 302 вершин')
         .replace(/^NATURAL · PUBLISHED WEIGHTS$/,'ПРИРОДНЫЙ · ИСХОДНЫЕ ВЕСА')
         .replace(/^NATURAL · YOUR WEIGHTS$/,'ПРИРОДНЫЙ · ВАШИ ВЕСА')

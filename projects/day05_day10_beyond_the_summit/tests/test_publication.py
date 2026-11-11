@@ -54,7 +54,7 @@ def test_six_report_pages_and_local_links():
             for name,value in attrs:
                 if name not in ['href','src'] or not value:continue
                 if value.startswith(('http:','https:','#','../')):continue
-                assert (PROJECT/'web'/unquote(value.split('#')[0])).exists(),value
+                assert (PROJECT/'web'/unquote(value.split('#')[0].split('?')[0])).exists(),value
     Links().feed((PROJECT/'web/index.html').read_text(encoding='utf-8'))
 
 def test_export_manifest_hashes():
