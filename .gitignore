@@ -37,3 +37,7 @@ cache/
 
 # Isolated no-admin Beyond the Summit native runtime (short Windows prefix).
 /.bts/
+
+# Existing local-only Day 03 DEM and scratch script; keep physical files.
+/projects/day03_polygons/data/processed/tashkent_dem_30m.tif
+/projects/day03_polygons/scripts/temp.py
